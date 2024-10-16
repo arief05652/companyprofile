@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="/public/img/photo.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/public/static/style.css" />
+    <title>Company-web</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg shadow fixed-top bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">RentCar</a>
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav mt-2">
+            <li class="nav-item mx-3 text-center mb-1">
+              <a class="nav-link active fw-bold rounded" href="#">Home</a>
+            </li>
+            <li class="nav-item mx-3 text-center mb-1">
+              <a class="nav-link active fw-bold rounded" href="#pricing"
+                >Pricing</a
+              >
+            </li>
+            <li class="nav-item mx-3 text-center mb-1">
+              <a class="nav-link active fw-bold rounded" href="#service"
+                >Service</a
+              >
+            </li>
+            <li class="nav-item mx-3 rounded text-center mb-1">
+              <button type="button" class="btn btn-secondary">Login</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SECTION HOME -->
+    <section class="mt-5 pt-5">
+      <div class="container">
+        <div
+          class="d-flex justify-content-around flex-column-reverse flex-md-row"
+        >
+          <div class="align-content-center">
+            <h1 id="title" class="text-center">RentCar</h1>
+            <h3 class="lead text-center">
+              Cheap and reliable car rental in Indonesia.
+            </h3>
+          </div>
+          <div class="text-center text-sm-center">
+            <img
+              src="/public/img/banner-home.png"
+              class="img-fluid"
+              width="400px"
+            />
+          </div>
+        </div>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          id="pricing"
+          fill="#00cba9"
+          fill-opacity="1"
+          d="M0,128L48,144C96,160,192,192,288,197.3C384,203,480,181,576,181.3C672,181,768,203,864,229.3C960,256,1056,288,1152,266.7C1248,245,1344,171,1392,133.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- SECTION PRICING -->
+    <section id="pricing-section" style="padding-top: 100px">
+      <div class="container">
+        <div class="text-center border rounded mb-5 pt-2 shadow">
+          <h3 id="title" class="text-center text-white">Price List</h3>
+        </div>
+        <!-- card section -->
+        <div
+          class="d-flex flex-column align-items-center text-center flex-md-row justify-content-around"
+        >
+          <!-- card 1-->
+          <div class="card p-2 m-3" style="width: 18rem; height: 23rem">
+            <img
+              src="/public/img/pricing/avanza.png"
+              class="card-img-top pt-2"
+            />
+            <div class="card-body">
+              <h3 class="fw-bold">Avanza</h3>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <!-- card 2-->
+          <div class="card p-2 m-3" style="width: 18rem; height: 23rem">
+            <div>
+              <img
+                src="/public/img/pricing/Corolla.png"
+                class="card-img-top mb-5 pt-3"
+              />
+            </div>
+            <div class="card-body">
+              <h3 class="fw-bold">Corrola</h3>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <!-- card 3-->
+          <div class="card p-2 m-3" style="width: 18rem; height: 23rem">
+            <div>
+              <img
+                src="/public/img/pricing/Mercedes-Benz.png"
+                class="card-img-top mb-4 pt-3"
+              />
+            </div>
+            <div class="card-body">
+              <h3 class="fw-bold">Mercedes-Benz</h3>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#00cba9"
+        fill-opacity="1"
+        d="M0,288L40,282.7C80,277,160,267,240,245.3C320,224,400,192,480,170.7C560,149,640,139,720,165.3C800,192,880,256,960,261.3C1040,267,1120,213,1200,202.7C1280,192,1360,224,1400,240L1440,256L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+      ></path>
+    </svg>
+
+    <!-- SECTION SERVICE -->
+    <section id="service" class="py-5">
+      <div class="container">
+        <div class="text-center border rounded mb-5 pt-2 shadow">
+          <h3 id="title" class="text-center text-black">Service</h3>
+        </div>
+        <div
+          class="p-5 d-flex flex-column align-items-center text-center flex-md-row justify-content-around"
+        >
+          <!-- 1 -->
+          <div class="mb-4">
+            <img
+              class="rounded"
+              src="/public/img/system/system-1.jpg"
+              width="350px"
+            />
+          </div>
+          <div class="flex-column">
+            <h3 class="fw-bold">Short term rental</h3>
+            <p class="text-white lead">
+              Penuhi dan tentukan kebutuhan unit untuk perjalanan Anda dengan
+              layanan rental mobil harian kami.
+            </p>
+          </div>
+        </div>
+        <div
+          class="p-5 d-flex flex-column align-items-center text-center flex-md-row justify-content-around"
+        >
+          <!-- 2 -->
+          <div class="flex-column">
+            <h3 class="fw-bold">Long term rental</h3>
+            <p class="text-white lead">
+              Harga spesial untuk Anda yang ingin menyewa dalam jangka panjang,
+              rental mobil bulanan, hingga tahunan.
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <img
+              class="rounded"
+              src="/public/img/system/system-2.jpg"
+              width="350px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/public/static/index.js"></script>
+  </body>
+</html>
